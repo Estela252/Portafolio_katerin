@@ -1,0 +1,144 @@
+/* Estilos generales */
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.img-medium {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fontTitle {
+    font-size: xxx-large;
+    background-color: rgb(77, 77, 77);
+    font-style: italic;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s;
+    opacity: 1;
+    z-index: 1000;
+    font-size:40px;
+}
+
+.floating-btn:hover{
+    cursor: pointer;
+}
+
+.floating-btn.hide {
+    opacity: 0;
+}
+
+.box-shadow{
+    transition: box-shadow 0.3s;
+}
+
+.box-shadow:hover{
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.quote-text{
+    font-size: 1rem;
+}
+
+@media (min-width: 991.98px) { 
+    .card-respon{
+        width: 990px !important;
+    }
+
+    .img-respon{
+        height: 405px !important; 
+    }
+ }
+
+ @media (max-width: 767.98px) { 
+    .fontTitle{
+        font-size:small;
+    }
+    .quote-text{
+        font-size: x-small;
+    }
+  }
+ 
+#btnHome {
+    display: none;
+  }
+  
+  #btnHome a {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #btnHome a:hover {
+    background-color: #bcadf2;
+    box-shadow: 0 0 10px rgba(234, 158, 158, 0.5);
+  }
+  #Metodologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+
+    #Servicios .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+}
+    #Habilidades .row .col-md-2 i:hover {
+    color: rgb(169, 182, 240); /* Cambia el color al pasar el cursor */
+}
+#Metodologias .row .col-md-4 i:hover {
+    color: rgb(208, 153, 229); /* Cambia el color al pasar el cursor */
+}
+
+.luz:hover{box-shadow: #7ae2f0;}
