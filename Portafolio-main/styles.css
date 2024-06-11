@@ -158,8 +158,9 @@ a:hover {
             background-color: #007bff;
         }
       
-
         .templatemo_contacttitle{
             padding-left: 0; /* Elimina padding-left */
             text-align: center; /* Centra el texto */
-        }
+            font-size: 30px;
+          }
+      
