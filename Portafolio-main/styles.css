@@ -159,4 +159,7 @@ a:hover {
         }
       
 
-        
+        .templatemo_contacttitle{
+            padding-left: 0; /* Elimina padding-left */
+            text-align: center; /* Centra el texto */
+        }
