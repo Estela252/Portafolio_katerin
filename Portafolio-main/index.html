@@ -820,42 +820,47 @@
         <section id="contacto">
             <div class="templatemo_contacttitle"><h3>CONTACTO</h3></div>
             <div class="container">
-            <div class="row justify-content-center mt-5">
-            <div class="col-lg-8">
-            <form action="https://formsubmit.co/stellahernandez912@gmail.com" method="POST" class="form-contact form-group" onsubmit="return showSuccessMessage(event)">
-            <!-- Configuración para formsubmit.co -->
-            <input type="hidden" name="_next" value="https://katerinhernandez.site/">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, te responderemos pronto.">
-            <input type="hidden" name="_cc" value="stellahernandez912@gmail.com">
-            <div class="row">
-             
-                            <div class="col-sm-6 py-2">
-            <label for="name" class="fg-grey">Nombre</label>
-            <input type="text" class="form-control" name="Name" required id="name" placeholder="Nombre">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8">
+                        <form action="https://formsubmit.co/stellahernandez912@gmail.com" method="POST" class="form-contact form-group" onsubmit="return showSuccessMessage(event)">
+                            <!-- Configuración para formsubmit.co -->
+                            <input type="hidden" name="_next" value="https://katerinhernandez.site/">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, te responderemos pronto.">
+                            <input type="hidden" name="_cc" value="stellahernandez912@gmail.com">
+                            
+                            <div class="row">
+                                <div class="col-sm-6 py-2">
+                                    <label for="name" class="fg-grey">Nombre</label>
+                                    <input type="text" class="form-control" name="Name" required id="name" placeholder="Nombre">
+                                </div>
+        
+                                <div class="col-sm-6 py-2">
+                                    <label for="email" class="fg-grey">Correo</label>
+                                    <input type="email" class="form-control" name="Email" required id="email" placeholder="Correo">
+                                </div>
+        
+                                <div class="col-12 py-2">
+                                    <label for="message" class="fg-grey">Mensaje</label>
+                                    <textarea id="message" rows="8" name="Message" class="form-control" required placeholder="Escribe un mensaje..."></textarea>
+                                </div>
+        
+                                <div class="col-12 mt-3 text-center">
+                                    <button type="submit" class="btn btn-primary mb-3" style="background-color: #007bff; color: white;">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+        
+                        <!-- Mensaje de éxito -->
+                        <div id="success-message" class="alert alert-success mt-3" style="display: none;">
+                            Correo enviado con éxito
+                        </div>
+                    </div>
+                </div>
             </div>
-             
-                            <div class="col-sm-6 py-2">
-            <label for="email" class="fg-grey">Correo</label>
-            <input type="email" class="form-control" name="Email" required id="email" placeholder="Correo">
-            </div>
-             
-             
-                            <div class="col-12 py-2">
-            <label for="message" class="fg-grey">Mensaje</label>
-            <textarea id="message" rows="8" name="Message" class="form-control" required placeholder="Escribe un mensaje..."></textarea>
-            </div>
-             
-                            <div class="col-12 mt-3 text-center">
-            <button type="submit" class=" btn btn-primary mb-3" style="background-color: #007bff; color: white;">Enviar mensaje</button>
-            </div>
-            </div>
-            </form>
-            <div id="success-message" class="alert alert-success mt-3" style="display: none;">
-                          Correo enviado con éxito
-            </div>
-            </div>
-            </div>
+        </section>
+        
+          
         
 
         
@@ -1071,6 +1076,25 @@
 
 
     <script src="https://use.fontawesome.com/82eb904f04.js"></script>
+
+    <script>
+        // Función para mostrar el mensaje de éxito
+        function showSuccessMessage(event) {
+            event.preventDefault();  // Previene el comportamiento por defecto (que sería recargar la página)
+            
+            // Mostrar mensaje de éxito
+            document.getElementById('success-message').style.display = 'block';
+    
+            // Después de 3 segundos, redirige al usuario
+            setTimeout(function() {
+                window.location.href = "https://katerinhernandez.site/";  // Redirecciona a la URL de éxito
+            }, 3000);
+    
+            return false;  // Impide que el formulario se envíe normalmente (ya que formsubmit se encarga del envío)
+        }
+    </script>
+    
+
 </body>
 
 </html>
